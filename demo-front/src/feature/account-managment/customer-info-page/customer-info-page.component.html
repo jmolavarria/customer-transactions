@@ -1,0 +1,19 @@
+<p>customer-info-page works!</p>
+
+<div *ngIf="customerInfo$ | async as info">
+  <span>
+    Customer name:{{info.name}}
+  </span>
+  <span>
+    Customer surname:{{info.surname}}
+  </span>
+  <span>
+    Customer accounts:{{info.accounts.length}}
+  </span>
+
+  <span *ngFor="let account of info.accounts">
+      <br>
+    account balance: {{account.balance}}
+    account transactions: {{account.transactions.length}}
+  </span>
+</div>
