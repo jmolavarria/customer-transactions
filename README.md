@@ -11,6 +11,8 @@ Using JDK 17
 ## Frontend
 To start the application do: `cd demfront && ng serve --proxy-config proxy.conf.json`
 
+To add this project for CI/CD, frontend part must be stored in a separated project, it will ease the build and testing with a proper docker image.     
+
 Only view of the customer information has been implemented.
 
 It can be accessed on http://localhost:4200/customer-info?customerId=1
